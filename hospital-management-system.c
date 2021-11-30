@@ -227,8 +227,8 @@ void Add_rec(void)
     Title(); // call Title function
     // list of variables
     char ans;
-    FILE *ek;                       // file pointer
-    ek = fopen("Record2.dat", "a"); // open file in write mode
+    FILE *ek;                      // file pointer
+    ek = fopen("Record.dat", "a"); // open file in write mode
     printf("\n\n\t\t\t!!!!!!!!!!!!!! Add Patients Record !!!!!!!!!!!!!\n");
 
 /* **************************First Name*********************************** */
@@ -460,7 +460,7 @@ void func_list()
     system("cls");
     Title();
     FILE *ek;
-    ek = fopen("Record2.dat", "r");
+    ek = fopen("Record.dat", "r");
     printf("\n\n\t\t\t!!!!!!!!!!!!!! List Patients Record !!!!!!!!!!!!!\n");
     gotoxy(1, 15);
     printf("Full Name");
@@ -512,7 +512,7 @@ void Search_rec(void)
     Title(); // call Title function
     FILE *ek;
 
-    ek = fopen("Record2.dat", "r");
+    ek = fopen("Record.dat", "r");
     printf("\n\n\t\t\t!!!!!!!!!!!!!! Search Patients Record !!!!!!!!!!!!!\n");
     gotoxy(12, 8);
     printf("\n Enter Patient Name to be viewed:");
