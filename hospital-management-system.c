@@ -9,6 +9,7 @@
 char ans = 0;
 int ok;
 int b, valid = 0;
+
 // FUNCTION DECLERATION
 void WelcomeScreen(void); // WelcomeScreen function decleration
 void Title(void);         // Title function decleration
@@ -510,6 +511,7 @@ void Search_rec(void)
     system("cls");
     Title(); // call Title function
     FILE *ek;
+
     ek = fopen("Record2.dat", "r");
     printf("\n\n\t\t\t!!!!!!!!!!!!!! Search Patients Record !!!!!!!!!!!!!\n");
     gotoxy(12, 8);
