@@ -719,7 +719,7 @@ void Dlt_rec()
         fclose(ek);
         fclose(ft);
         remove("Record.dat");
-        rename("temp_file2.dat", "Record2.dat");
+        rename("temp_file.dat", "Record.dat");
         printf("\n\n\t\t\t Record deleted successfully :) ");
         getch();
         MainMenu();
