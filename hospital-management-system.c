@@ -597,8 +597,8 @@ void Edit_rec(void)
 
     system("cls");
     Title(); // call Title window
-    ft = fopen("temp2.dat", "w+");
-    ek = fopen("Record2.dat", "r");
+    ft = fopen("temp.dat", "w+");
+    ek = fopen("Record.dat", "r");
     if (ek == NULL)
     {
         printf("\n\t Can not open file!! ");
@@ -676,8 +676,8 @@ void Edit_rec(void)
         printf("\n\t\tNO RECORD FOUND...");
     fclose(ft);
     fclose(ek);
-    remove("Record2.dat");
-    rename("temp2.dat", "Record2.dat");
+    remove("Record.dat");
+    rename("temp.dat", "Record.dat");
     getch();
     MainMenu();
 }
@@ -688,8 +688,8 @@ void Dlt_rec()
     system("cls");
     Title(); // call Title function
     FILE *ek, *ft;
-    ft = fopen("temp_file2.dat", "w+");
-    ek = fopen("Record2.dat", "r");
+    ft = fopen("temp_file.dat", "w+");
+    ek = fopen("Record.dat", "r");
     printf("\n\n\t\t\t!!!!!!!!!!!!!! Delete Patients Record !!!!!!!!!!!!!\n");
     gotoxy(12, 8);
     printf("\n Enter Patient Name to delete: ");
